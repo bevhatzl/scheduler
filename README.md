@@ -3,7 +3,7 @@ This is a day planner made in HTML, CSS and Javascript. The Moment.js library an
 
 ## User Story
 <p>A user wants to enter important events to a daily planner which is saved in local storage.<p>
-<p>Find the deployed project here: ()</p>
+<p>Find the deployed project here: (https://bevhatzl.github.io/scheduler/)</p>
 
 ## Instructions
 <p>User is presented with the current date at top of page. Time blocks are displayed from 9am until 5pm. Each hour block is editable</p>
