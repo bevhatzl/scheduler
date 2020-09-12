@@ -19,11 +19,11 @@ $(document).ready(function() {
             let currentEl = timeBlockEls.eq(i);
             let currentElVal = Number(currentEl.attr("value"));
             if (currentHour > currentElVal) {
-              currentEl.css('background-color', '#e6e6e6');
+                currentEl.css('background-color', '#d3d3d3');
             } else if (currentHour === currentElVal) {
-                currentEl.css('background-color', '#ff4d4d');
+                currentEl.css('background-color', '#ff6961');
             } else {
-                currentEl.css('background-color', '#5cd65c');
+                currentEl.css('background-color', '#77dd77');
             }
         }
     }
@@ -59,16 +59,6 @@ $(document).ready(function() {
             return true;
         } 
     }
-
-    /*
-    // event listener for clicking on timeblock
-    $(".time-block").on("click", function(event) {
-        event.preventDefault();
-        // get the id of the clicked element
-        let index = $(this).attr('value');
-        let inputId = "input-" + index;           
-    });    */
-
     
     // event handler for clicking on save button
     $(".saveBtn").on("click", function(event) {

@@ -21,7 +21,7 @@ body {
     border-bottom: 10px solid black;
     padding-bottom: 40px;
   }
-  
+
   .description{
     white-space: pre-wrap;
   }
@@ -29,7 +29,7 @@ body {
   .time-block{
     text-align: center;
     border-radius: 15px;
-    width: 80%;
+    width: 65%;
     display: flex;
   }
   
@@ -37,6 +37,7 @@ body {
     white-space: pre-wrap;
     height: 80px;
     border-top: 1px solid white;;
+    justify-content: center;
   }
   
   .hour {
