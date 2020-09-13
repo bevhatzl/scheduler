@@ -16,11 +16,11 @@ This is a day planner made in HTML, CSS and Javascript. The Moment.js library an
 
 #### Initial interface
 
-![Screenshot of blank page of Work Day Scheduler](/images/Quiz1.png)
+![Screenshot of blank page of Work Day Scheduler](/images/screen1.png)
 
 #### Final Interface
 
-![Screenshot of Work Day Scheduler with saved events entered](/images/Quiz2.png)
+![Screenshot of Work Day Scheduler with saved events entered](/images/screen2.png)
 
 ## Author
 Beverley Hatzl 2020

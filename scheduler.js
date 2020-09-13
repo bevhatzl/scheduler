@@ -17,13 +17,13 @@ $(document).ready(function() {
         // set colour codes to time blocks
         for (let i = 0; i <= 9; i++) {
             let currentEl = timeBlockEls.eq(i);
-            let currentElVal = Number(currentEl.attr("value"));
+            let currentElVal = Number(currentEl.attr("id"));
             if (currentHour > currentElVal) {
-                currentEl.css('background-color', '#d3d3d3');
+                currentEl.addClass("past");
             } else if (currentHour === currentElVal) {
-                currentEl.css('background-color', '#ff6961');
+                currentEl.addClass("present");
             } else {
-                currentEl.css('background-color', '#77dd77');
+                currentEl.addClass("future");
             }
         }
     }
@@ -34,8 +34,10 @@ $(document).ready(function() {
             storedTodosArray = storedTodos;
             // display the Todo list based on data in local storage
             for (let i = 0; i < storedTodosArray.length; i++) {
-                let blockDiv = document.getElementById(storedTodosArray[i].id);
-                blockDiv.firstChild.nextSibling.value = storedTodosArray[i].value;
+                // let blockDiv = document.getElementById(storedTodosArray[i].id); Vanilla JS                
+                // blockDiv.firstChild.nextSibling.value = storedTodosArray[i].value;  Vanilla JS
+                $("#"+storedTodosArray[i].id).children().first()[0].value = storedTodosArray[i].value;
+                // jQuery to replace the 2 lines of Vanilla JS above
             }
         }
     }
